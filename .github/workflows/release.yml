@@ -19,12 +19,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
+          cache: npm
 
       - name: install rust stable
         uses: dtolnay/rust-toolchain@stable
 
       - name: install frontend dependencies
-        run: npm ci
+        run: npm install --no-fund --no-audit
 
       - name: build and publish release
         uses: tauri-apps/tauri-action@action-v0.6.2
