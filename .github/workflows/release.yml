@@ -38,7 +38,7 @@ jobs:
           tagName: ${{ github.ref_name }}
           releaseName: NoteSync ${{ github.ref_name }}
           generateReleaseNotes: true
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
           uploadUpdaterJson: true
           uploadUpdaterSignatures: true
