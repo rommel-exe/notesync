@@ -14,7 +14,6 @@ type StudentSidebarProps = {
 
 const sections: StudentSidebarSection[] = [
   { id: "dashboard", title: "Dashboard" },
-  { id: "classes", title: "Classes" },
   { id: "planner", title: "Planner" },
   { id: "focus", title: "Focus" },
   { id: "library", title: "Library" },
@@ -30,13 +29,6 @@ function SectionIcon({ section }: { section: StudySection }) {
           <rect x="14" y="4" width="6" height="6" rx="1.6" />
           <rect x="4" y="14" width="6" height="6" rx="1.6" />
           <rect x="14" y="14" width="6" height="6" rx="1.6" />
-        </svg>
-      );
-    case "classes":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden="true" className="student-sidebar-nav-icon-svg">
-          <path d="M5 6.5A1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5v10A1.5 1.5 0 0 1 17.5 18h-11A1.5 1.5 0 0 1 5 16.5z" />
-          <path d="M8 8h8M8 11.5h8M8 15h5" />
         </svg>
       );
     case "planner":
