@@ -1,8 +1,9 @@
 {
-  "name": "notesync",
+  "name": "flight-globe",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
+  "description": "Desktop satellite globe viewer with photorealistic 3D terrain",
   "scripts": {
     "dev": "vite --port 1420",
     "build": "tsc -b && vite build",
@@ -26,8 +27,10 @@
     "@tiptap/extension-underline": "^3.22.4",
     "@tiptap/react": "^3.20.4",
     "@tiptap/starter-kit": "^3.20.4",
+    "cesium": "^1.140.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "vite-plugin-cesium": "^1.2.23",
     "zustand": "^5.0.12"
   },
   "devDependencies": {
